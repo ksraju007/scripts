@@ -1,6 +1,9 @@
 #!/bin/bash
 # This installs latest swarm software from github on Ubuntu 14.04
 
+#Prepare
+sudo apt-get update ; sudo apt-get install python-software-properties -y ;
+
 #first, install git and golang
 sudo add-apt-repository ppa:evarlast/golang1.4  -y
 sudo apt-get update
