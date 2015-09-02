@@ -1,7 +1,7 @@
 #!/bin/bash
 # This installs latest swarm software from github on Ubuntu 14.04
 
-function msg {
+msg () {
   echo -e "\e[1;32m $1 \e[0m" ;
 }
 
