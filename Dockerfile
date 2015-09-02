@@ -1,6 +1,7 @@
 # Creates a ubuntu 14 docker image with ssh server and java preinstalled
 # It contains also a useraccount : testuser/testpass
 # This container is very useful to run inside Jenkins + Docker + Swarm strategy
+# Example build command : "docker build --no-cache --rm -t U14JSSH ."
 
 FROM ubuntu:14.04
 MAINTAINER Rajesh Sivaraman, rajesh.sivaraman@here.com
