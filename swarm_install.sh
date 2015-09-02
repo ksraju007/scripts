@@ -6,7 +6,7 @@ bail () {   msg "Something went wrong !! . Check the above output." ;   exit 1; 
 
 #Prepare
 msg "Updating apt and installing pre-requisites.."
-sudo apt-get -qq update ; sudo apt-get install python-software-properties -y ;
+sudo apt-get -qq update ; sudo apt-get install software-properties-common -y ;
 
 #first, install git and golang
 msg "Installing git and golang latest versions.."
