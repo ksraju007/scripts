@@ -10,8 +10,8 @@ sudo apt-get -qq update ; sudo apt-get install software-properties-common -y ;
 
 #first, install git and golang
 msg "Installing git and golang latest versions.."
-sudo add-apt-repository ppa:evarlast/golang1.4  -y 
-sudo apt-get -qq update
+sudo add-apt-repository ppa:evarlast/golang1.4  -y || bail
+sudo apt-get -qq update || bail
 sudo apt-get install git golang -y || bail
 
 #prepare /opt to hold new tools
