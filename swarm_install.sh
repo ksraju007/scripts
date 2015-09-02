@@ -24,7 +24,7 @@ cd $GOPATH ; go get github.com/tools/godep || bail
 #get latest release of swarm
 msg "Downloading latest stable release of swarm.."
 mkdir -p $GOPATH/src/github.com/docker ; cd $GOPATH/src/github.com/docker ;  rm -rf swarm ;
-git clone -b release https://github.com/docker/swarm.git || bail ; 
+git clone -q -depth 1 -b release https://github.com/docker/swarm.git || bail ; 
 
 msg "Installing Swarm.."
 cd swarm ; $GOPATH/bin/godep go install . || bail
