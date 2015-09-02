@@ -9,12 +9,13 @@ sudo apt-get install ca-certificates python-software-properties ;
 sudo add-apt-repository -y ppa:otto-kesselgulasch/gimp
 
 #pull all packages
-sudo apt-get install vim screen openssh-server wget curl git \
+sudo apt-get install -y vim screen openssh-server wget curl git \
      geany gimp remmina rdesktop firefox chromium-browser gftp \
      netcat tcpdump sysstat telnet nmap vlc zip unzip unrar acl \
      build-essential remmina-plugin-* gparted rsync aptitude tree \
      geany-plugin-* ethtool gimp-data-extras gimp-plugin-registry \
-     flashplugin-installer ubuntu-restricted-extras puppet puppet-lint ;
+     flashplugin-installer ubuntu-restricted-extras ps2pdf xpdf \
+     imagemagick ufraw gimp-ufraw wine zenity xdg-utils puppet puppet-lint ;
      
 
 # crash report popups, disable apport
