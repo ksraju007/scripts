@@ -15,8 +15,10 @@ sudo apt-get install -y vim screen openssh-server wget curl git \
      build-essential remmina-plugin-* gparted rsync aptitude tree \
      geany-plugin-* ethtool gimp-data-extras gimp-plugin-registry \
      flashplugin-installer ubuntu-restricted-extras ps2pdf xpdf \
-     imagemagick ufraw gimp-ufraw wine zenity xdg-utils puppet puppet-lint ;
+     imagemagick ufraw gimp-ufraw wine zenity xdg-utils puppet \
+     rubygems vim-syntax-docker vim-puppet vim-scripts ;
      
+sudo gem install puppet-lint --no-rdoc --no-ri ;     
 
 # crash report popups, disable apport
 sudo sed -i 's/1/0/g' /etc/default/apport
