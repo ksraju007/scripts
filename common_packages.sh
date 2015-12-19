@@ -3,7 +3,7 @@
 
 #prepare
 sudo apt-get update 
-sudo apt-get install ca-certificates python-software-properties ;
+sudo apt-get install ca-certificates software-properties-common python-software-properties ;
 
 #a better gimp
 sudo add-apt-repository -y ppa:otto-kesselgulasch/gimp
@@ -14,9 +14,9 @@ sudo apt-get install -y vim screen openssh-server wget curl git \
      netcat tcpdump sysstat telnet nmap vlc zip unzip unrar acl \
      build-essential remmina-plugin-* gparted rsync aptitude tree \
      geany-plugin-* ethtool gimp-data-extras gimp-plugin-registry \
-     flashplugin-installer ubuntu-restricted-extras ps2pdf xpdf \
+     flashplugin-installer ubuntu-restricted-extras xpdf \
      imagemagick ufraw gimp-ufraw wine zenity xdg-utils puppet \
-     rubygems vim-syntax-docker vim-puppet vim-scripts ;
+     ruby vim-syntax-docker vim-puppet vim-scripts ;
      
 sudo gem install puppet-lint --no-rdoc --no-ri ;     
 
