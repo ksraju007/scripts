@@ -8,6 +8,8 @@ apt-get install -y \
     gnupg-agent \
     software-properties-common
  
+ npm install -g npx eslint
+ 
  curl -fsSL https://download.docker.com/linux/ubuntu/gpg | apt-key add -
  add-apt-repository \
    "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
