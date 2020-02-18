@@ -20,5 +20,6 @@ apt-get install -y \
  
  docker -v 
  docker-compose -v
+ java -version
  
 
