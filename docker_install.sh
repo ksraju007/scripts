@@ -4,7 +4,7 @@ apt-get update
 apt-get install -y \
     apt-transport-https \
     ca-certificates \
-    curl screen jq vim wget screen unzip netcat \
+    curl screen jq vim wget screen unzip netcat npm \
     gnupg-agent \
     software-properties-common
  
