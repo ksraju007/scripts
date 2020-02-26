@@ -5,4 +5,4 @@ add-apt-repository universe
 apt-get update
 apt-get install -y apt-transport-https 
 apt-get update
-apt-get install -y dotnet-sdk-3.1 
+apt-get install -y dotnet-sdk-3.1  dotnet-sdk-2.1
