@@ -6,3 +6,4 @@ apt-get update
 apt-get install -y apt-transport-https 
 apt-get update
 apt-get install -y dotnet-sdk-3.1  dotnet-sdk-2.1
+dotnet tool install --global dotnet-sonarscanner --version 4.7.1
