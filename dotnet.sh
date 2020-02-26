@@ -8,11 +8,11 @@ apt-get update
 apt-get install -y dotnet-sdk-3.1  dotnet-sdk-2.1
 useradd builder
 chsh -s /bin/bash builder
-dotnet tool install --global dotnet-sonarscanner --version 4.7.1
 
 echo creating builder user and creating ssh key
 useradd -m builder
 chsh -s /bin/bash builder
+su -c "dotnet tool install --global dotnet-sonarscanner --version 4.7.1" -l builder
 su -c "ssh-keygen -t rsa -N '' -f /home/builder/.ssh/id_rsa"  -l builder
 su -c "cp /home/builder/.ssh/id_rsa.pub /home/builder/.ssh/authorized_keys" -l builder
 cat /home/builder/.ssh/id_rsa
